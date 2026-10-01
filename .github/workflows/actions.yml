@@ -10,10 +10,6 @@ jobs:
   frontend-lint:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./estudo_angular2
-
     steps:
       - name: Clonar o repositório
         uses: actions/checkout@v4
@@ -23,7 +19,7 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
-          cache-dependency-path: './estudo_angular2/package-lock.json'
+          cache-dependency-path: "package-lock.json"
 
       - name: Instalar dependências
         run: npm ci
