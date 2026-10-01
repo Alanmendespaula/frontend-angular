@@ -26,3 +26,6 @@ jobs:
 
       - name: Executar Lint no Angular
         run: npm run lint
+        
+      - name: Instalar dependências
+        run: npm ci --legacy-peer-deps
