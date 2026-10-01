@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
+
+/* Customização Avançada e Destaque da Tabela (ngx-datatable) */
+ngx-datatable.material,
+.ngx-datatable.material {
+  width: 100% !important;
+  background: #ffffff !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.2), 0 0 0 2px #cbd5e1 !important;
+  border-top: 5px solid #2563eb !important;
+}
+
+ngx-datatable datatable-header,
+ngx-datatable .datatable-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+  border-bottom: 3px solid #2563eb !important;
+}
+
+ngx-datatable datatable-header-cell,
+ngx-datatable .datatable-header-cell {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  font-size: 0.875rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.75px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 16px 14px !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+
+/* Ocultar a barrinha branca vertical de redimensionamento ao passar o mouse */
+ngx-datatable .resize-handle,
+.ngx-datatable .resize-handle,
+ngx-datatable .resize-handle:hover,
+.ngx-datatable .resize-handle:hover,
+ngx-datatable datatable-header-cell .resize-handle,
+ngx-datatable .datatable-header-cell .resize-handle {
+  display: none !important;
+  border: none !important;
+  background: transparent !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+}
+
+ngx-datatable datatable-body-row,
+ngx-datatable .datatable-body-row {
+  display: flex !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  transition: background-color 0.2s ease, transform 0.15s ease !important;
+}
+
+ngx-datatable datatable-body-row:hover,
+ngx-datatable .datatable-body-row:hover {
+  background-color: #e0f2fe !important;
+}
+
+ngx-datatable datatable-body-cell,
+ngx-datatable .datatable-body-cell {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 16px 14px !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+}
+
+ngx-datatable .datatable-header-cell-template-wrap,
+ngx-datatable datatable-header-cell-template-wrap {
+  text-align: center !important;
+  width: 100%;
+}
